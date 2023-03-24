@@ -1,0 +1,60 @@
+<h2>Template: <small> Dinámicos</small></h2>
+
+<hr>
+
+<form autocomplete="off">
+  <div class="row mb-3">
+    <label class="col-sm-3 col-fomr-label">Nombre</label>
+    <div class="col-sm-9">
+      <input type="text"
+             class="form-control"
+             placeholder="Nombre de la persona">
+      <span class="form-text text-danger">
+        Este campo es obligatorio
+      </span>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label class="col-sm-3 col-fomr-label">Agregar</label>
+    <div class="col-sm-9">
+      <div class="input-group">
+        <input type="text"
+               class="form-control"
+               placeholder="Agregar cantante favorito">
+        <button class="btn btn-outline-primary">
+          Agregar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label class="col-sm-3 col-fomr-label">Favoritos</label>
+    <div class="col-sm-9">
+      <!-- <div class="input-group" *ngFor="let favorito of persona.favoritos; let i = index">
+        <input [(ngModel)]="favorito.nombre"
+             name = "favorito_{{i}}"
+             class="form-control mb-1"
+             required>
+        <button class="btn btn-outline-danger mb-1" (click)="eliminar(i)">
+          Eliminar
+        </button>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <button type="button"
+              class="btn btn-primary float-end">
+        Guardar
+      </button>
+    </div>
+  </div>
+</form>
+
+
+<!-- <span>Persona</span>
+<pre>{{ persona | json }}</pre> -->
+
